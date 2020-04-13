@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/user",
+            "lambdaFunction": "User",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "amltest",
+    "apiName": "amltest",
+    "functionArns": [
+        {
+            "lambdaFunction": "User"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amptest-amptest-62303-authRole",
+        "unAuthRoleName": "amplify-amptest-amptest-62303-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "User",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
